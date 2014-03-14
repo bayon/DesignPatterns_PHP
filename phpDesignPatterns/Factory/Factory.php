@@ -25,8 +25,8 @@ class AutomobileFactory
 }
 
 // have the factory create the Automobile object
-$veyron = AutomobileFactory::create('Bugatti', 'Veyron');
+$veyron = AutomobileFactory::create('Ford', 'Pinto');
 
-print_r($veyron->get_make_and_model()); // outputs "Bugatti Veyron"
+print_r($veyron->get_make_and_model()); // outputs "Ford Pinto"
 
 ?>

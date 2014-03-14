@@ -1,12 +1,10 @@
 <?php
 
-  include_once('AbstractSubject.php');
-  
-  abstract class AbstractObserver {
+include_once ('AbstractSubject.php');
 
+abstract class AbstractObserver {
 
-    abstract function update(AbstractSubject $subject_in);
-
-
-  }
-  ?>
+	abstract function update(AbstractSubject $subject_in);
+	
+}
+?>

@@ -1,9 +1,8 @@
 <?php
 
-  interface BookTitleStateInterface {
-      
-    public function showTitle($context_in);
+interface BookTitleStateInterface {
 
+	public function showTitle($context_in);
 
-  }
+}
 ?>

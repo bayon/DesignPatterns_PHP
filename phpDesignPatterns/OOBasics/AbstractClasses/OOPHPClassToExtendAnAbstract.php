@@ -1,25 +1,19 @@
 <?php
+//this class "extends" OOPHPAbstractClass
+include_once ('OOPHPAbstractClass.php');
 
-  //this class "extends" OOPHPAbstractClass 
+class OOPHPClassToExtendAnAbstract extends OOPHPAbstractClass {
 
+	private $instanceName;
 
-  include_once('OOPHPAbstractClass.php');
-  
-  class OOPHPClassToExtendAnAbstract extends OOPHPAbstractClass {
+	//OOPHPAbstractClass  DELEGATE METHODS
+	public function getName() {
+		return $this -> instanceName;
+	}
 
+	public function setName($nameIn) {
+		$this -> instanceName = $nameIn;
+	}
 
-    private $instanceName;  
-    
-    //OOPHPAbstractClass has the abstract function getName,
-    //  so we must implement it here. 
-    public function getName() {
-      return $this->instanceName;
-    }  
-    
-    //OOPHPAbstractClass has the abstract function setName,
-    //  so we must implement it here. 
-    public function setName($nameIn) {
-      $this->instanceName = $nameIn;
-    }
-  }
+}
 ?>

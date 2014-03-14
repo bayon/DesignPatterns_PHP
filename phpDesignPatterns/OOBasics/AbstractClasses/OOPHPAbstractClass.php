@@ -1,16 +1,15 @@
 <?php
 
+//OOPHPAbstractClass - a simple OO PHP Abstract Class
+//  this defines two functions, getName() and setName($nameIn)
+//  which any class extending this must have
+// so essentially the same as a java interface, or an iOS protocol
 
-  //OOPHPAbstractClass - a simple OO PHP Abstract Class
-  //  this defines two functions, getName() and setName($nameIn)
-  //  which any class extending this must have
-  
-  abstract class OOPHPAbstractClass {  
-    
-    abstract public function getName();
+abstract class OOPHPAbstractClass {
 
+	abstract public function getName();
 
-    abstract public function setName($nameIn);
-    
-  }
+	abstract public function setName($nameIn);
+
+}
 ?>
