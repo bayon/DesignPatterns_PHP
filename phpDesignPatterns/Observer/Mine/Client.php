@@ -3,10 +3,8 @@
 include_once("Observer.php");
 include_once("Subject.php");
 
-
 $subject = new Subject();
 $observer = new Observer();
-
 
 $subject->attach($observer);
 
