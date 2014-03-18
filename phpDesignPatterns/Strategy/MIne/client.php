@@ -1,19 +1,19 @@
 <?php
-include_once ("TacticContext.php");
-include_once ("FootballStrategy.php");
-include_once ("AttackTactic.php");
-include_once ("DefenseTactic.php");
+include_once ("StrategyContext.php");
+include_once ("Strategy.php");
+include_once ("Offense.php");
+include_once ("Defense.php");
 
-$team1 = "Barcelona";
-$team2 = "Real Madrid";
+$actor1 = "Barcelona";
+$actor2 = "Real Madrid";
 
-$tacticContext = new TacticContext();
+$strategyContext = new StrategyContext();
 
-$attackTactic = new AttackTactic();
-$tacticContext -> setStrategy($attackTactic);
-$tacticContext -> selectTacticForTeam($team1);
+$offense = new Offense();
+$strategyContext -> setStrategy($offense);
+$strategyContext -> selectStrategyForActor($actor1);
 
-$defenseTactic = new DefenseTactic();
-$tacticContext -> setStrategy($defenseTactic);
-$tacticContext -> selectTacticForTeam($team2);
+$defense = new Defense();
+$strategyContext -> setStrategy($defense);
+$strategyContext -> selectStrategyForActor($actor2);
 ?>
