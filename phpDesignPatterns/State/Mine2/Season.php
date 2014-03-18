@@ -1,6 +1,6 @@
 <?php
-echo("<br>" . __FILE__);
 include_once ("SeasonContext.php");
+
 
 class Season {
 
@@ -11,14 +11,8 @@ class Season {
 		$this -> seasonContext = $context;
 	}
 
-	public function theSeason($context) {
+	public function changeTheStateInContext($context) {
 		$this -> seasonContext = $context;
-		echo("<br>THE SEASON:");
 	}
-
-	public function showSeason() {
-		echo("<br>And the season is...");
-	}
-
 }
 ?>
