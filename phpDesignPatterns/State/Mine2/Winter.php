@@ -3,11 +3,16 @@ echo("<br>".__FILE__);
 include_once("Season.php");
 include_once("Spring.php");
 
-class Winter implements Season{
+class Winter extends Season{
+		
+	private $seasonContext;
+		
 	public function theSeason($context){
 		echo("<br>set season winter");
-		$context->setSeason(new Spring());
-		echo("WINTER!");
+		$this->seasonContext = $context;
+		$this->seasonContext->setSeason(new Spring()); 
+		 
 	}
+	
 }
 ?>
